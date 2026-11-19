@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Noelles_proteomsim"
+version = "0.1.0"
+description = "This simulates a proteomics pipeline starting from the digestion of the proteins, then doing sortation of peptides via liquid chromatography and characterisation by mass spectrometry."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Noelle Erlewein", email = "noelle.erlewein@stud.uni-heidelberg.de }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib"
+    "pyteomics"
+    "pytest", # Add all required dependencies
+]
+
+[tool.setuptools.packages.find]
+include = ["Noelles_proteomsim*"]
