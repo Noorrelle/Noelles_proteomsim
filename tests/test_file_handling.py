@@ -9,4 +9,4 @@ def test_read_fasta():
 
     assert protein_map["P12345"] == "MKWVTFISLLFLFSSAYSGSLRLSFSGK"
     assert protein_map["P67890"] == "MALWMRLLPLLALLALWGPGPGSGK"
-    
+
